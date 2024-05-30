@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Contact Form" />
+    <meta
+      property="og:description"
+      content="If you want to know more information about our products, this is the way"
+    />
+    <meta property="og:image" content="https://mdsdmks.com/your-image.jpg" />
+    <meta property="og:type" content="form" />
+    <meta property="og:url" content="https://dmemki.com/your-page-url" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <form class="container">
+      <div>
+        <label for="fullname">Name</label>
+        <input type="text" id="fullname" name="fullname"/>
+      </div>
+      <br />
+
+      <div>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" />
+      </div>
+      <br />
+
+      <div>
+        <div>Gender</div>
+        <br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <input
+          type="radio"
+          id="no-disclose"
+          name="gender"
+          value="no-disclose"
+        />
+        <label for="no-disclose">Do not want to say</label>
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <br />
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="5" />
+      </div>
+      <br />
+
+      <div>
+        <input type="submit" value="Submit" class="submit"/>
+      </div>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
